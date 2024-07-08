@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171616">
+
+    <RelativeLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/default_profile_image"
+            android:background="@drawable/circle_border"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_marginStart="10dp"
+            android:text="First\nLast"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Analytics Heading -->
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analytics"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:background="#171616"
+        android:gravity="left" />
+
+    <!-- Scrollable Container for Analytics -->
+    <Button
+        android:id="@+id/graphButton"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="#0980FF"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="View Graph" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headingText"
+        android:padding="5dp">
+
+        <!-- Container for Analytics Data -->
+        <LinearLayout
+        android:id="@+id/analyticsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Rounded rectangles for segmented sign images and names will be dynamically added here -->
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+    </RelativeLayout>

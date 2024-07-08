@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/recordingDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="00:00"
+        android:visibility="gone"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_record_button"
+        android:onClick="startRecording" />
+
+    <Button
+        android:id="@+id/photoButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/recordButton"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ic_camera_button"
+        android:onClick="takePhoto" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/recordButton"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/ic_pause_button"
+        android:onClick="pauseRecording"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/pauseButton"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/ic_save_button"
+        android:onClick="saveRecording"
+        android:visibility="gone"/>
+
+</RelativeLayout>

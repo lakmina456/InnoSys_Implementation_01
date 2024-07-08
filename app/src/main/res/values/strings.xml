@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SignMe</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="repeat">Repeat</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="album_art">Album Art</string>
+    <string name="playlist">Playlist</string>
+    <string name="navigation_playlists">Playlists</string>
+    <string name="navigation_all_songs">All Songs</string>
+    <string name="navigation_artists">Artists</string>
+</resources>

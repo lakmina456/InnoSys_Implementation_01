@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_animation">
+
+    <!-- ImageView for image a.png with zoom animation -->
+
+    <!-- ImageView for image b.png with zoom animation -->
+
+    <!-- ImageView for image c.png with zoom animation --><![CDATA[
+    " />
+
+    ]]><!-- SignMe text with fade-in animation -->
+
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="241dp"
+        android:layout_height="226dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-77dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="226dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a" />
+
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="212dp"
+        android:layout_height="241dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-52dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-56dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/b" />
+
+    <ImageView
+        android:id="@+id/imageC"
+        android:layout_width="206dp"
+        android:layout_height="221dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-32dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/c" />
+
+    <TextView
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/taglineText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="sans-serif"
+        android:text="SignMe"
+        android:textColor="#ffffff"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        />
+
+    <!-- Tagline text with fade-in animation -->
+    <TextView
+        android:id="@+id/taglineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="First ever sign detection app for Sri Lankan Roads"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

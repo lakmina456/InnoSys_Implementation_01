@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navy_black">#000080</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="primaryColor">#FF4081</color>
+    <color name="background_color">#000000</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="background">#000000</color> <!-- Black background -->
+    <color name="red">#FF0000</color> <!-- Example of red color -->
+    <color name="alertDialogButtonColor">#FF0000</color>
+    <color name="primary_dark">#1b1b1b</color>
+    <color name="primaryTextColor">#FF4081</color>
+
+    <!-- Add other color definitions as needed -->
+</resources>

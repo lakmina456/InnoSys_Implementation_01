@@ -1,0 +1,74 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.signme">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:label="SignMe"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DriveActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".RecordActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
+        </activity>
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".AnalyticsActivity" />
+        <activity android:name=".MainAnalyticsActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".CapturedPhotosActivity" />
+        <activity android:name=".GraphActivity" />
+        <activity android:name=".ViewImageActivity" />
+        <activity
+            android:name=".SessionActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="SignMe"
+            android:exported="true">
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+        </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131313"> <!-- Dark navy blue -->
+
+    <!-- Welcome message -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="81dp"
+        android:text="Welcome User!"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Drive Button -->
+    <Button
+        android:id="@+id/driveButton"
+        android:layout_width="298dp"
+        android:layout_height="89dp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_drive_background"
+        android:padding="20dp"
+        android:text="Drive"
+        android:textColor="#ffffff" />
+
+    <!-- Profile Button -->
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_below="@+id/performanceButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="189dp"
+        android:background="@drawable/button_profile_background"
+        android:onClick="profile"
+        android:padding="10dp"
+        android:text="Profile"
+        android:textColor="#ffffff" />
+
+    <!-- Record Button -->
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_below="@+id/historyButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="187dp"
+        android:layout_toStartOf="@+id/profileButton"
+        android:background="@drawable/button_drive_background"
+        android:padding="10dp"
+        android:text="Record"
+        android:textColor="#ffffff" />
+
+    <!-- Performance Button -->
+    <Button
+        android:id="@+id/performanceButton"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_below="@+id/driveButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="59dp"
+        android:background="@drawable/button_performance_background"
+        android:padding="10dp"
+        android:text="Performance"
+        android:textColor="#ffffff" />
+
+    <!-- History Button -->
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_below="@+id/driveButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/performanceButton"
+        android:background="@drawable/button_history_background"
+        android:padding="10dp"
+        android:text="History"
+        android:textColor="#ffffff" />
+
+    <!-- ImageButton for Logout -->
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Logout"
+        android:onClick="logout"
+        android:src="@drawable/ic_logout" />
+
+</RelativeLayout>

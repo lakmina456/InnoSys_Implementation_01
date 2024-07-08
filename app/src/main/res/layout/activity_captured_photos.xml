@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171616"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Captures"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:background="#171616"
+        android:gravity="left" />
+
+    <GridView
+        android:id="@+id/photosGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="8dp"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

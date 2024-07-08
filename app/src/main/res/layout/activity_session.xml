@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Music player widget layout -->
+
+
+    <!--Sign Glide Image View -->
+    <ImageView
+        android:id="@+id/imgGlide"
+        android:layout_width="747dp"
+        android:layout_height="460dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/img" />
+
+    <!-- Sign Label View -->
+
+    <!-- Sign View -->
+
+    <!-- ImageView for mute and unmute -->
+
+    <!-- End Session Button -->
+
+    <!-- Date and Time View -->
+
+    <ImageView
+        android:id="@+id/imgGlide1"
+        android:layout_width="747dp"
+        android:layout_height="460dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-5dp" />
+
+    <TextView
+        android:id="@+id/label_view"
+        android:layout_width="273dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:text="label"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_view" />
+
+    <ImageView
+        android:id="@+id/sign_view"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/sign_view_background"
+        android:contentDescription="Image View"
+        android:src="@drawable/sign_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mute_unmute" />
+
+    <ImageButton
+        android:id="@+id/mute_unmute"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="336dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular_image_button"
+        android:scaleType="centerCrop"
+        android:src="@drawable/volume"
+        app:layout_constraintStart_toEndOf="@+id/date_time_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/end_session_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular_image_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stop"
+        android:text="End"
+        app:layout_constraintBottom_toTopOf="@+id/sign_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mute_unmute"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/date_time_view"
+        android:layout_width="231dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:inputType="datetime"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

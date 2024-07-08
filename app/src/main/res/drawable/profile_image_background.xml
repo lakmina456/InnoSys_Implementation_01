@@ -1,0 +1,5 @@
+<!-- res/drawable/profile_image_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#CCCCCC"/> <!-- Change the color as per your design -->
+</shape>

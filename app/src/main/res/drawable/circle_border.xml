@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF00" /> <!-- Transparent background -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" /> <!-- White border color -->
+    <corners android:radius="32dp" /> <!-- Half of the width/height of the profile image -->
+</shape>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_playlists"
+        android:icon="@drawable/ic_playlist"
+        android:title="Playlists"/>
+    <item
+        android:id="@+id/navigation_all_songs"
+        android:icon="@drawable/ic_music_note"
+        android:title="All Songs"/>
+    <item
+        android:id="@+id/navigation_artists"
+        android:icon="@drawable/ic_artist"
+        android:title="Artists"/>
+</menu>
