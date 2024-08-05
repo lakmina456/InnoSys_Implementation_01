@@ -29,8 +29,14 @@
 This project was built using the following technologies.
 
 - Java
-- Sqlite
+- MySQL Server Database
 - Android Studio
+
+## ** Included**
+
+- Android Studio Project
+- MySQL Server Database File
+- Research Component Algorithm
 
 ## Key Features
 
